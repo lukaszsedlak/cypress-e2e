@@ -1,3 +1,6 @@
+import MainPage from '../pages/main-page';
+import LoginPage from '../pages/login-page';
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -11,10 +14,14 @@
 //
 // -- This is a parent command --
 Cypress.Commands.add('login', (username, password) => {
-    cy.get('#signin_button').click();
-    cy.get('#user_login').type(username);
-    cy.get('#user_password').type(password);
-    cy.get('.btn-primary').click();
+
+    const mainPage = new MainPage();
+    const loginPage = new LoginPage(); 
+
+    mainPage.getSignInButton().click();
+    loginPage.getUsernameInput().type(username);
+    loginPage.getPasswordInput().type(password);
+    loginPage.getSignInButton().click();
  })
 //
 //
