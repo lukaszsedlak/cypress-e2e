@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
-import NavigationTabComponent from '../page-components/navigation-tab-component';
-import PayBillsTab from '../page-components/pay-bills-tab-component';
-import AddNewPayeePage from '../pages/add-new-payee-page';
-import PaySavedPayee from '../pages/pay-saved-payee-page';
+import NavigationTabComponent from '../../page-components/navigation-tab-component';
+import PayBillsTab from '../../page-components/pay-bills-tab-component';
+import AddNewPayeePage from '../../pages/add-new-payee-page';
+import PaySavedPayee from '../../pages/pay-saved-payee-page';
 
 describe('Pay bills tests', () => {
 
