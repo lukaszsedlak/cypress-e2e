@@ -5,12 +5,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-  reporter: 'mochawesome',
-  reporterOptions: {
-    reportDir: 'cypress/results',
-    overwrite: true,
-    html: true,
-    json: true,
-  }
+    reporter: "mochawesome",
+    reporterOptions: {
+      reportDir: "cypress/results",
+      overwrite: true,
+      html: true,
+      json: false,
+    },
+    specPattern: 'cypress/tests',
   },
 });
