@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge-report": "mochawesome-merge cypress/report/partial/*.json > cypress/report/partial/output.json",
+    "generate-html": "marge cypress/report/partial/output.json --reportDir ./cypress/report --inline",
+    "delete_reports": "node cypress/delete-reports.js"
   },
   "author": "Łukasz",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.8.1",
-    "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0"
   }
 }
