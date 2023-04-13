@@ -15,5 +15,10 @@
     "cypress": "^12.8.1",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress": "latest"
   }
 }
