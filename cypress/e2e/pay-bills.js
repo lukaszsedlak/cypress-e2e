@@ -18,6 +18,12 @@ Given(`I navigate to 'Pay Bills' Tab`, () => {
     cy.log('"Pay Saved Payee" tab is displayed.');
 });
 
+When(`I select {string} with {string}`, (payee, account) => {
+    paySavedPayee.getPayeeSelect().select(payee);
+    paySavedPayee.getAccountSelect().select(account);
+});
+
+
 When('I populate all fields', () => {
     
     paySavedPayee.getAmountInput().type('100');
