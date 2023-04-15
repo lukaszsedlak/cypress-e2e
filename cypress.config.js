@@ -16,5 +16,6 @@ module.exports = defineConfig({
   e2e: {
     specPattern: "**/*.feature",
     setupNodeEvents,
+    report: 'html',
   },
 });

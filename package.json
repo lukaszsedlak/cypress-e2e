@@ -20,5 +20,11 @@
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
     "@cypress/browserify-preprocessor": "latest",
     "cypress": "latest"
+  },
+  "cypress-cucumber-preprocessor":{
+    "html":{
+      "enabled":true
+    },
+    "reportDir": "report"
   }
 }
