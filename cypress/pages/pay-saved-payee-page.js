@@ -1,5 +1,13 @@
 class PaySavedPayee {
 
+    getPayeeSelect(){
+        return cy.get('#sp_payee');
+    }
+
+    getAccountSelect(){
+        return cy.get('#sp_account');
+    }
+
     getAmountInput(){
         return cy.get('#sp_amount');
     }
